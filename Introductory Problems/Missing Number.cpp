@@ -2,13 +2,13 @@
 using namespace std;
 
 main(){
-    int n;
+    long long n;
     cin>>n;
 
-    int ttl = (n*(n+1))/2;
+    long long ttl = (n*(n+1))/2;
     
     while(n>1){
-        int temp;
+        long long temp;
         cin>>temp;
         ttl-=temp;
         n--;
