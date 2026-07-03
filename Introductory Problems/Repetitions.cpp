@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-main(){
+int main(){
     string s;
     cin>>s;
 
@@ -9,8 +9,10 @@ main(){
     int cur=1;
     int maxi = 1;
     for(int i=1 ; i<n ; i++){
-        if(s[i] == s[i-1]) cur++;
-        else maxi =max(maxi, cur), cur=1;
+        if(s[i] == s[i-1]) cur++, maxi=max(maxi, cur);
+        else cur=1;
     }
     cout<<maxi;
+
+    return 0;
 }
